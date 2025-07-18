@@ -1,20 +1,14 @@
 import { useState } from 'react'
-import reactLogo from '@/assets/react.svg'
-import viteLogo from '/vite.svg'
+import "@fontsource/inter"
+
 import '@/styles/index.css'
 
-//Ejemplo
+import Navigation from '@/components/Navigation.tsx'
 
-function Greeting(){
-    return <>
-        <div>
-            "Hola mundo :)"
-        </div>
-    </>
+function App(){
+    return <Navigation/>
 }
 
-function App() {
-    return Greeting();
-}
+
 
 export default App
