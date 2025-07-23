@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import "@fontsource/inter"
-
+import React from 'react'
 import '@/styles/index.css'
-
-import Navigation from '@/components/Navigation.tsx'
+import Services from './styles/components/Services';
 
 function App(){
-    return <Navigation/>
+    return (
+        <div>
+            <Services/>
+        </div>
+    )
 }
 
-
-
-export default App
+export default App;
