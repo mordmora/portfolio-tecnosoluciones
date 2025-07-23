@@ -1,8 +1,8 @@
-
+import React from "react";
 import "@/styles/components/ContactButton.css"
 
 interface Args {
-    title: String;
+    title: string;
 }
 
 function ContactButton({title}: Args){

@@ -1,6 +1,7 @@
-
+import React from "react";
 import "@/styles/components/Navigation.css"
-import ContactButton from "@/components/ContactButton";
+//import ContactButton from "@/components/ContactButton";
+import ContactButton from "./ContactButton";
 
 
 

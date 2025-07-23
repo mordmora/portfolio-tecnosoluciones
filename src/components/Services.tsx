@@ -1,9 +1,8 @@
 import React from "react";
-import ServiceCards from "../../components/ServiceCards";
-import { dataServiceCard } from "../../dataServiceCard";
+import ServiceCards from "./ServiceCards";
+import { dataServiceCard } from "../dataServiceCard";
 
 function Services(){
-
     return(
         <div className="services-section"> 
             <h1 className="services-title"> Nuestros Servicios</h1>

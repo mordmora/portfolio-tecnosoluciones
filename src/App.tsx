@@ -1,11 +1,12 @@
 import React from 'react'
 import '@/styles/index.css'
-import Services from './styles/components/Services';
+import Projects from './components/Projects';
+
 
 function App(){
     return (
         <div>
-            <Services/>
+            <Projects/>
         </div>
     )
 }

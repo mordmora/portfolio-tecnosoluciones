@@ -2,8 +2,6 @@ import React from "react";
 import { type ServiceProps as Props } from "../typesService";
 import "../styles/components/ServiceCard.css";
 
-
-
 function ServiceCard({id,icon,title,description}:Props){
     return(
         <div className="card"> 
