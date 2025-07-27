@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import "@fontsource/inter"
+import './styles/App.css'
 
-import '@/styles/index.css'
-
-import Navigation from '@/components/Navigation.tsx'
+import Navigation from './components/Navigation.tsx'
+import LandingPage from './components/LandingPage'
 
 function App(){
-    return <Navigation/>
+    return <LandingPage/>
 }
-
-
 
 export default App

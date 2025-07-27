@@ -1,6 +1,6 @@
 
 import "@/styles/components/Navigation.css"
-import ContactButton from "@/components/ContactButton";
+import ContactButton from "../components/ContactButton";
 
 
 
