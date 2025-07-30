@@ -1,0 +1,36 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  background-color: #3a0ca3; /* azul morado como en la img */
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-title {
+  font-weight: 600; /* Semi-bold */
+  margin: 0;
+  font-size: 14px;
+  color: #000000; /* Negro */
+}
+
+.contact-stext {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280; /* Gris medio */
+}
