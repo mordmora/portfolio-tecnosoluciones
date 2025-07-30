@@ -1,0 +1,18 @@
+.social-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f1eefc; 
+  color: #4b1fc9; 
+  font-size: 20px;
+  text-decoration: none; 
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.social-card:hover {
+  background-color: #4b1fc9; 
+  color: #fff; 
+  transform: scale(1.1); 
+}
