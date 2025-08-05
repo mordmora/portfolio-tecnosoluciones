@@ -1,36 +1,39 @@
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   margin-bottom: 20px;
 }
 
 .icon-container {
-  background-color: #3a0ca3; /* azul morado como en la img */
-  color: white;
-  padding: 10px;
-  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  background-color: #3b0cf3; /* Morado */
+  border-radius: 12px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 22px;
+  justify-content: center;
+}
+
+.icon-container .material-symbols-outlined {
+  font-size: 28px;
+  color: white;
 }
 
 .contact-text {
   display: flex;
   flex-direction: column;
-  gap: 2px;
 }
 
 .contact-title {
-  font-weight: 600; /* Semi-bold */
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
   margin: 0;
-  font-size: 14px;
-  color: #000000; /* Negro */
 }
 
 .contact-stext {
-  margin: 0;
   font-size: 14px;
-  color: #6b7280; /* Gris medio */
+  color: #6b7280;
+  margin: 2px 0 0 0;
 }

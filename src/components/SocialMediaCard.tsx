@@ -1,10 +1,12 @@
 import React from "react";
 import "../styles/components/SocialMediaCard.css";
 
-type SocialProps = {
+export type SocialProps = {
     id:string;
-    icon:React.ReactNode;
-    url:string;
+    icon?:React.ReactNode;
+    image?:string;
+    url?:string;
+    label?:string;
 }
 
 
