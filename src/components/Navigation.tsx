@@ -1,4 +1,4 @@
-
+import React from "react";
 import "@/styles/components/Navigation.css"
 import ContactButton from "../components/ContactButton";
 import mainLogo from "../assets/svg/main-logo.svg"

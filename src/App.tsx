@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import "@fontsource/inter"
-import './styles/App.css'
+import React from 'react'
+import '@/styles/index.css'
+import Projects from './components/Projects';
 
-import Navigation from './components/Navigation.tsx'
-import LandingPage from './components/LandingPage'
 
 function App(){
-    return <LandingPage/>
+    return (
+        <div>
+            <Projects/>
+        </div>
+    )
 }
 
-export default App
+export default App;
