@@ -8,8 +8,15 @@
 .about-card-icon {
     color: #2B15B6;
     font-size: 24px;
-    min-width: 24px;         /* Evita que el icono se comprima */
+    min-width: 32px;         /* ✅ Aumentar el ancho mínimo */
     flex-shrink: 0;          /* El icono mantiene su tamaño */
+}
+
+/* ✅ AGREGAR: Estilos específicos para las imágenes SVG */
+.about-card-icon img {
+    width: 32px;             /* ✅ Ancho del SVG */
+    height: 32px;            /* ✅ Alto del SVG */
+    object-fit: contain;     /* Mantiene las proporciones */
 }
 
 .about-card-content {

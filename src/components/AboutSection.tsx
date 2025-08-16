@@ -1,5 +1,9 @@
 import '../styles/components/AboutSection.css'
 import AboutCard from './AboutCard';
+import mailIcon from "../assets/svg/mail-icon.svg"
+import personIcon from "../assets/svg/person-icon.svg"
+import checkIcon from "../assets/svg/check-icon.svg"
+import aboutImg from "../assets/img/about.png"
 
 function AboutSection(){
 
@@ -16,19 +20,19 @@ function AboutSection(){
         <div className="why-choose-us">
 
             <div className="image-section">
-                <img src="../assets/about.png" alt="Por que elegirnos?"/>
+                <img src={aboutImg} alt="Por que elegirnos?" width="720" height="570"/>
             </div>
             <div className="text-section">
                 <div className='why-text'> ¿Por qué elegirnos? </div>
                 <ul>
                     <li>
-                        <AboutCard icon="icon" title="Equipo multidisciplinar" description="Nuestros miembros aportan conocimiento en diversas tecnologías y áreas del desarrollo."/>
+                        <AboutCard icon={personIcon} title="Equipo multidisciplinar" description="Nuestros miembros aportan conocimiento en diversas tecnologías y áreas del desarrollo."/>
                     </li>
                     <li>
-                        <AboutCard icon="icon" title="Metodología ágil" description="Utilizamos prácticas ágiles comprobadas para garantizar una entrega oportuna y una mejora continua."/>
+                        <AboutCard icon={checkIcon} title="Metodología ágil" description="Utilizamos prácticas ágiles comprobadas para garantizar una entrega oportuna y una mejora continua."/>
                     </li>
                     <li>
-                        <AboutCard icon="icon" title="Atención y soporte 24/7" description="Nuestro compromiso no termina con la implementación. Ofrecemos soporte y mantenimiento continuos."/>
+                        <AboutCard icon={mailIcon} title="Atención y soporte 24/7" description="Nuestro compromiso no termina con la implementación. Ofrecemos soporte y mantenimiento continuos."/>
                     </li>
                 </ul>
 

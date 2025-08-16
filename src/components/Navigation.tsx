@@ -1,14 +1,14 @@
 
 import "@/styles/components/Navigation.css"
 import ContactButton from "../components/ContactButton";
-
+import mainLogo from "../assets/svg/main-logo.svg"
 
 
 function Navigation() {
     return <header className="header">
         <div className="header-container">
             <div className="div-logo">
-                Logo:p
+                <img src={mainLogo}></img>
             </div>
             <nav className="nav">
                 <ul className="nav-list">

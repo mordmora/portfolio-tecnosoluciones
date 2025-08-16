@@ -10,7 +10,7 @@ function AboutCard({ icon, title, description }: AboutCardProps) {
     return (
         <div className="about-card">
             <div className="about-card-icon">
-                {icon}
+                <img src={icon} alt="icon" width="32" height="32"/>
             </div>
             <div className="about-card-content">
                 <h4 className="about-title">{title}</h4>
