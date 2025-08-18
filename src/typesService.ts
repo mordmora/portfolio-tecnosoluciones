@@ -1,7 +1,7 @@
 // Estructuración de las Cards de Servicios ofrecidos
 export type ServiceProps= {
     id:string;
-    icon:React.ReactNode;
+    icon:string;
     title:string;
     description:string
 }

@@ -1,14 +1,14 @@
 import React from 'react'
 import '@/styles/index.css'
-import ContactUs from './components/ContactUs';
+import Partners from './components/Partners';
 
 
 
 function App(){
     return (
         <div>
+          <Partners/>
           
-          <ContactUs/>
         </div>
     )
 }

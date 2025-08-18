@@ -6,7 +6,9 @@ function ServiceCard({id,icon,title,description}:Props){
     return(
         <div className="card"> 
             <div className= "card-content" id={id}>
-                <div className="card-icon">{icon}</div>
+                <div className="card-icon">
+                    <span className="material-symbols-outlined">{icon}</span>    
+                </div>
                 <h1 className="card-title"> {title}</h1>
                 <p className="card-description"> {description}</p>
             </div>
