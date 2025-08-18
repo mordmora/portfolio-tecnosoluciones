@@ -1,4 +1,5 @@
 import '../styles/components/AboutCard.css';
+import React from 'react';
 
 interface AboutCardProps {
     icon: string;
