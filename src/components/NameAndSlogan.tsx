@@ -1,4 +1,6 @@
 import "../styles/components/NameAndSlogan.css"
+import React from 'react';
+
 function NameAndSlogan(){
     return <div className="presentation-container">
         <div className="name">

@@ -1,4 +1,4 @@
-
+import React from 'react';
 import AboutSection from './AboutSection.tsx';
 import Hero from './Hero.tsx';
 
