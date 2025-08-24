@@ -3,7 +3,7 @@ import AboutCard from './AboutCard';
 import mailIcon from "../assets/svg/mail-icon.svg"
 import personIcon from "../assets/svg/person-icon.svg"
 import checkIcon from "../assets/svg/check-icon.svg"
-import aboutImg from "../assets/img/about.png"
+import aboutImg from "../assets/img/about.svg"
 import React from 'react';
 
 function AboutSection(){

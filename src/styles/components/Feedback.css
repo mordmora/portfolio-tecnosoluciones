@@ -1,0 +1,91 @@
+/* Contenedor general */
+.feedback-container {
+  padding: 20vh 20px;
+  background: linear-gradient(90deg, rgba(20, 0, 50, 0.9), rgba(32, 32, 255, 0.401), rgba(32, 32, 255, 0.75));
+  color: #e5e7eb; /* texto claro sobre fondo oscuro */
+  text-align: center;
+}
+
+.feedback-title {
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.feedback-description {
+  font-size: 16px;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto 28px;
+}
+
+/* Carrusel */
+.feedback-carousel {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding: 0 16px;
+}
+.feedback-carousel { scrollbar-width: none; }
+.feedback-carousel::-webkit-scrollbar { display: none; height: 0; }
+
+.feedback-track {
+  display: inline-flex;
+  gap: 16px;
+  scroll-padding: 0 16px;
+}
+
+/* Card */
+.feedback-card {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: min(320px, 85vw);
+  background: rgba(255, 255, 255, 0.1); /* gris con opacidad */
+  backdrop-filter: blur(2px);
+  min-height: 280px; /* más alta */
+  display: flex;                /* para distribuir verticalmente */
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  text-align: left;
+  padding: 18px;
+}
+
+/* Las estrellas no se encogen y quedan arriba */
+.feedback-stars { flex-shrink: 0; }
+.feedback-stars {
+  display: inline-flex;
+  gap: 4px;
+  color: #f5a524; /* color para .filled usando currentColor */
+}
+.feedback-stars svg { fill: #6b7280; } /* gris para vacías */
+.feedback-stars svg.filled { fill: currentColor; } /* dorado para las llenas */
+
+/* Texto */
+.feedback-comment {
+  color: #e2e2e2;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;                    /* el gap del contenedor maneja el espaciado */
+  flex: 1;                      /* rellena el espacio disponible */
+}
+.feedback-author {
+  display: flex;
+  color:#ffffff;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: auto;             /* empuja el autor al final de la card */
+}
+.feedback-name {
+  font-weight: 800;
+  color: #ffffff;
+}
+.feedback-role {
+  color: #7a7a7a;
+  font-size: 0.9rem;
+}

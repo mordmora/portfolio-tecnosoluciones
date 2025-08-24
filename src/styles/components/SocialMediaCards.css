@@ -1,5 +1,11 @@
 .social-container {
   display: flex;
-  gap: 15px; 
-  margin-top: 10px;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.follow-us {
+    padding-top: 6rem;
+    font-size: 22px;
+    font-weight: bold;
 }

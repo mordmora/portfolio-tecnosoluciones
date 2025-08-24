@@ -1,3 +1,11 @@
+.contact-section-wrapper {
+  background: #ffffff;
+  width: 100%;
+  min-height: 100vh; /* ocupa el alto completo de la ventana */
+  display: flex;
+  align-items: center; /* centra verticalmente el bloque interior */
+}
+
 .contact-section {
   padding: 5rem 2rem;
   max-width: 1200px;
@@ -25,24 +33,22 @@
   line-height: 1.6;
 }
 
+/* Layout 2 columnas: info izquierda, formulario derecha */
 .contact-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /* izquierda/derecha */
   gap: 2rem;
-  align-items: stretch;
+  align-items: start;
 }
 
 .contact-left {
-  flex: 1;
-  min-width: 320px;
+  min-width: 0; /* permite que el grid maneje el ancho */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .contact-right {
-  flex: 1.2;
-  min-width: 380px;
   background-color: #f9f9fc;
   padding: 2.5rem;
   border-radius: 16px;
@@ -50,6 +56,11 @@
   transition: transform 0.2s ease;
 }
 
-.contact-right:hover {
-  transform: translateY(-4px);
+.contact-right:hover { transform: translateY(-4px); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-content { grid-template-columns: 1fr; }
+  .contact-right { order: 2; }
+  .contact-left { order: 1; }
 }

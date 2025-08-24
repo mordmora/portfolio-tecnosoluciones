@@ -1,7 +1,7 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* Asegura que imagen y contenido se mantengan arriba; evita espacios entre ellos */
   background-color: white;
   border-radius: 16px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
@@ -9,6 +9,7 @@
   transition: transform 0.2s ease;
   cursor: pointer;
   max-width: 100%;
+  height: 100%; /* hace que todas las cards llenen la celda de la grilla */
 }
 
 .project-card:hover {
@@ -18,7 +19,7 @@
 .project-card__image {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 300px; /* más alta para dar mayor presencia a la card */
   overflow: hidden;
 }
 
@@ -26,15 +27,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block; /* evita espacio fantasma por baseline de imagen */
 }
 
-.image-overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60%;
-  background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
-}
 
 .project-card__content {
   padding: 1rem;
@@ -44,7 +39,7 @@
 .project-card__content h3 {
   font-weight: 700;
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem; /* quitar margen superior para alinear títulos */
 }
 
 .project-card__content p {

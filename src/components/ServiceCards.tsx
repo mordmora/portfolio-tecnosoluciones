@@ -2,13 +2,13 @@ import React from "react"
 import ServiceCard from "./ServiceCard"
 import { type ListOfServiceCard } from "../typesService"
 import "../styles/components/ServiceCards.css";
-
+import "../styles/components/ServiceSection.css"
 type Props = {
     cards: ListOfServiceCard
 }
 
 function ServiceCards({cards}:Props){
-    return(  
+    return(
             <div className="cards-container">
                 {
                     cards.map(card => (
@@ -21,7 +21,7 @@ function ServiceCards({cards}:Props){
                         />
                     ))
                 }
-            </div>     
+            </div>
     )
 }
 

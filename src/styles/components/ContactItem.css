@@ -1,23 +1,36 @@
 .contact-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  display: grid; /* antes: flex */
+  grid-template-columns: 50px 1fr; /* columna icono + texto */
+  column-gap: 15px; /* antes: gap */
+  align-items: start;
   margin-bottom: 20px;
 }
 
+/* Bloque del icono, tamaño fijo y sin desplazamientos */
 .icon-container {
   width: 50px;
   height: 50px;
-  background-color: #3b0cf3; /* Morado */
+  background-color: #3b0cf3;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-self: start; /* alinea la columna siempre al borde izquierdo */
 }
 
+/* Icono estable y centrado ópticamente */
 .icon-container .material-symbols-outlined {
   font-size: 28px;
+  line-height: 1;
+  display: block;
   color: white;
+  transform: translateX(-1px); /* corrige leve desplazamiento a la derecha */
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 28; /* igual al font-size para mejor óptica */
+  text-align: center;
 }
 
 .contact-text {
@@ -25,15 +38,23 @@
   flex-direction: column;
 }
 
+.contact-info-title {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 2.3rem;
+}
+
 .contact-title {
   font-weight: bold;
   font-size: 16px;
   color: #000;
-  margin: 0;
+  margin: 0 0 2px 0;
+  line-height: 1.2;
 }
 
 .contact-stext {
   font-size: 14px;
   color: #6b7280;
   margin: 2px 0 0 0;
+  line-height: 1.4;
 }

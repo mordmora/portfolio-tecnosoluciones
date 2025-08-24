@@ -1,46 +1,36 @@
-
 import PartnerCard from "./PartnerCard";
-import React from "react";
 import "../styles/components/PartnerCards.css";
+import keyleIcon from "../assets/img/keyle.svg";
+import tumercadoIcon from "../assets/img/tumercadoLogo.svg";
+import salespointIcon from "../assets/img/salespointLogo.svg";
 
 const dataCards = [
     {
-        id:"1",
-        image:"src/assets/iconAnime.jpg",
-        label:"Horizon"
+        id: "1",
+        icon: <img src={keyleIcon} alt="keyle' Store" />,
+        label: "keyle' Store",
     },
-     {
-        id:"2",
-        image:"src/assets/keylesLogo.jpg",
-        label:"Horizon"
-    },
-     {
-        id:"3",
-        image:"src/assets/keylesLogo.jpg",
-        label:"Horizon"
-    }, 
     {
-        id:"4",
-        image:"src/assets/keylesLogo.jpg",
-        label:"Horizon"
+        id: "2",
+        icon: <img src={tumercadoIcon} alt="TuMercado" />,
+        label: "TuMercado",
     },
-     {
-        id:"5",
-        image:"src/assets/keylesLogo.jpg",
-        label:"Horizon"
+    {
+        id: "3",
+        icon: <img src={salespointIcon} alt="SalesPoint" />,
+        label: "SalesPoint",
     },
-
-]
+];
 
 function PartnerCards(){
     return(
         <div className="partner-cards">
             {
-                dataCards.map(card=>(
+                dataCards.map(card => (
                     <PartnerCard
                         key={card.id}
                         id={card.id}
-                        image={card.image}
+                        icon={card.icon}
                         label={card.label}
                     />
                 ))

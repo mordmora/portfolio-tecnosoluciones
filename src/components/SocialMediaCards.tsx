@@ -40,11 +40,11 @@ const mediaLinks = [
 function SocialMediaCards(){
     return(
         <div>
-            <h3>Síguenos</h3>
+            <div className="follow-us">Síguenos</div>
             <div className="social-container">
                 {
                     mediaLinks.map((card) =>(
-                        <SocialMediaCard 
+                        <SocialMediaCard
                             key={card.id}
                             id={card.id}
                             icon={card.icon}

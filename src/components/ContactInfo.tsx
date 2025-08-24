@@ -1,11 +1,11 @@
 import React from "react";
 import ContactItem from "./ContactItem";
-
+import "../styles/components/ContactItem.css"
 
 function ContactInfo(){
     return(
         <div>
-            <h2>Información de contacto</h2>
+            <div className="contact-info-title">Información de contacto</div>
 
             <ContactItem
                 icon="mail"

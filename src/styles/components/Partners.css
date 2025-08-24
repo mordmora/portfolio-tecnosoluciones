@@ -1,8 +1,7 @@
-
 .partners {
   text-align: center;
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: var(--partners-bg, #fff); /* usa variable para sincronizar el color del fade */
 }
 
 .partners-title {
@@ -20,15 +19,53 @@
 
 
 .partners-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+  /* Contenedor deslizante horizontal */
+  position: relative;
+
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; /* carrusel con snap */
+  padding: 0 16px; /* aire bajo los fades */
+  margin: 0 auto 32px; /* centra el carrusel y reduce separación inferior */
+
+  /* Tamaño fijo más pequeño */
+  width: 100%;
+  max-width: 900px; /* ajusta a tu gusto: 720px, 840px, etc. */
+  height: 180px;    /* alto fijo para el viewport del carrusel */
+
+  /* Fade en los bordes con máscara para suavizar el corte de los items */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 32px,
+    #000 calc(100% - 32px),
+    transparent 100%
+  );
+          mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 32px,
+    #000 calc(100% - 32px),
+    transparent 100%
+  );
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
+}
+
+/* Ocultar scrollbar (opcional) */
+.partners-list { scrollbar-width: none; }
+.partners-list::-webkit-scrollbar { display: none; height: 0; }
+
+/* Desactivar overlays anteriores para evitar doble efecto */
+.partners-list::before,
+.partners-list::after {
+  content: none !important;
 }
 
 .partners-button {
-  background-color: #1a0dab; 
+  background-color: #1a0dab;
   color: white;
   padding: 12px 30px;
   border: none;
